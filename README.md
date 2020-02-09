@@ -1,6 +1,8 @@
 # ARCore FPS
 An FPS game set in an AR environment such that players can interact with virtual game objects created with reference to real-world parameters like phone's acceleration, position, rotation to determine it's orientation in virtual 3D space in realtime.
 
+# APK: https://github.com/SKY-ROY/FPS/blob/master/BUILD/ARCoreFPS_9Feb.1.apk
+
 # Screenshots:
 Main Menu Screen:
 <img src="BUILD/Screenshots/4f24c565-cc81-47bb-8ac2-4b146c047b8a.jpg"> 
@@ -11,5 +13,3 @@ Inventory Screen:
 Gameplay:
 <img src="BUILD/Screenshots/3ba7fe28-619c-49e7-b119-f2fc2e2cc508.jpg"> 
 <img src="BUILD/Screenshots/5a4129cc-39a2-4044-a9ab-205fa6209973.jpg"> 
-
-# APK: https://github.com/SKY-ROY/FPS/blob/master/BUILD/ARCoreFPS_9Feb.1.apk
