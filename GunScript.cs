@@ -8,16 +8,14 @@ public class GunScript : MonoBehaviour
     public char weaponClass = 'N'; // A: low rof high damage; B: high rof low damage; C: Broken weapons;
     public float damage = 10f;
     public float range = 100f;
-    public float impactForce = 30f;
+    public float impactForce = 0f;
     public float fireRate = 15f;
     public int maxAmmo = 10;
     public float reloadTime = 1f;
-    
-    private bool isReloading = false;
-    private int currentAmmo;
-    
+
     [Header("Elements bound to Weapon")]
-    public Camera fpsCam;
+    //public Camera fpsCam;
+    public GameObject fpsCam;
     public ParticleSystem muzzleFlash;
     public GameObject ImpactEffect;
 
@@ -28,28 +26,37 @@ public class GunScript : MonoBehaviour
     public AudioClip gunShotClip;
 
     [Header("Weapon(Gun) UI Elements")]
-    public Text ammoTxt;
-    public Text ammoCount3D;
 
+    private bool isReloading = false;
+    private int currentAmmo;
+    private bool shootCurrent;
     private float nextTimeToFire = 0f;
+    
     void Start()
     {
+        fpsCam = GameObject.Find("First Person Camera") ;
         currentAmmo = maxAmmo;
-        ammoTxt.text = maxAmmo.ToString() + "/" + maxAmmo.ToString();
-        ammoCount3D.text = ammoTxt.text;
+        this.transform.parent.GetComponent<SlotControl>().ammmoTxt.text = maxAmmo.ToString() + "/" + maxAmmo.ToString();
     }
     void OnEnable()
     {
         isReloading = false;
-        gunAnimator.SetBool("RealoadingParameter", false);
+        gunAnimator.SetBool("ReloadingParameter", false);
     }
     // Update is called once per frame
     void Update()
     {
-        
+        shootCurrent = this.transform.parent.GetComponent<SlotControl>().Bridge_shootCurrent;
+
+        /// <summary>
+        /// if isReloading is true Update function terminates here and called next time when new frame is called 
+        /// </summary>
         if (isReloading)
             return;
-
+        
+        /// <summary>
+        /// currentAmmo check done every frame to keep track and reload once it reaches zero
+        /// </summary>
         if (currentAmmo <= 0)
         {
             StartCoroutine(Reload());
@@ -57,32 +64,22 @@ public class GunScript : MonoBehaviour
         }
         
         /// <summary>
-        /// Weapon Category wise shooting style 
+        /// if shootCurrent bool is true weapon gets fired, the bool value is manipulated at run-time by another event handler
+        /// </summary>
+        if (shootCurrent && Time.time >= nextTimeToFire)
+        {
+            nextTimeToFire = Time.time + 1f / fireRate;
+            Shoot();
+        }
+
+        /// <summary>
+        /// Weapon Category wise shooting for debugging with LMB
         /// </summary>
         /*
-        if (weaponClass == 'A')
+        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
         {
-            if (Input.GetButtonDown("Fire1") && Time.time >= nextTimeToFire)
-            {
-                nextTimeToFire = Time.time + 1f / fireRate;
-                Shoot();
-            }
-        }
-        else if (weaponClass == 'B')
-        {
-            if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
-            {
-                nextTimeToFire = Time.time + 1f / fireRate;
-                Shoot();
-            }
-        }
-        else if (weaponClass == 'C')
-        {
-            if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
-            {
-                nextTimeToFire = Time.time + 1f / fireRate;
-                Shoot();
-            }
+            nextTimeToFire = Time.time + 1f / fireRate;
+            Shoot();
         }
         */
     }
@@ -102,17 +99,19 @@ public class GunScript : MonoBehaviour
         yield return new WaitForSeconds(0.25f);
 
         currentAmmo = maxAmmo;
-        ammoTxt.text = maxAmmo.ToString() + "/" + maxAmmo.ToString();
-        ammoCount3D.text = ammoTxt.text;
+        this.transform.parent.GetComponent<SlotControl>().ammmoTxt.text = maxAmmo.ToString() + "/" + maxAmmo.ToString();
 
         isReloading = false;
     }
+    
+    /// <summary>
+    /// Shoot() method 
+    /// </summary>
     void Shoot()
     {
         currentAmmo--;
 
-        ammoTxt.text = currentAmmo.ToString() + "/" + maxAmmo.ToString();
-        ammoCount3D.text = ammoTxt.text;
+        this.transform.parent.GetComponent<SlotControl>().ammmoTxt.text = currentAmmo.ToString() + "/" + maxAmmo.ToString();
 
         muzzleFlash.Play();
 
@@ -140,25 +139,6 @@ public class GunScript : MonoBehaviour
             GameObject impactGO = Instantiate(ImpactEffect , Shoot.point, Quaternion.LookRotation(Shoot.normal));
             impactGO.GetComponent<ParticleSystem>().Play();
             Destroy(impactGO, 2f);
-        }
-    }
-    public void ClickToShoot(int weaponClass)
-    {
-        Debug.Log("clicked type:" + weaponClass);
-
-        if (isReloading)
-            return;
-
-        if (currentAmmo <= 0)
-        {
-            StartCoroutine(Reload());
-            return;
-        }
-
-        if (Time.time >= nextTimeToFire)
-        {
-            nextTimeToFire = Time.time + 1f / fireRate;
-            Shoot();
         }
     }
 }

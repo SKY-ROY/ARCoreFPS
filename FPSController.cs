@@ -25,15 +25,15 @@ namespace GoogleARCore.Examples.HelloAR
         /// <summary>
         /// A prefab to place when a raycast from a user touch hits a vertical plane.
         /// </summary>
-        private GameObject GameObjectVerticalPlanePrefab;
+        ///private GameObject GameObjectVerticalPlanePrefab;
 
         /// <summary>
         /// A prefab to place when a raycast from a user touch hits a horizontal plane.
         /// </summary>
-        public GameObject GameObjectHorizontalPlanePrefab;
         //public GameObject GameObjectHorizontalPlanePrefabUpward;
         //public GameObject GameObjectHorizontalPlanePrefabDownward;
-
+        public GameObject GameObjectHorizontalPlanePrefab;
+        
         /// <summary>
         /// A prefab to place when a raycast from a user touch hits a feature point.
         /// </summary>
@@ -42,7 +42,7 @@ namespace GoogleARCore.Examples.HelloAR
         /// <summary>
         /// andyCount to limit the number of instantiation
         /// </summary>
-        private int andyCount = 0;
+        //private int andyCount = 0;
 
         /// <summary>
         /// The rotation in degrees need to apply to prefab when it is placed.
@@ -130,12 +130,14 @@ namespace GoogleARCore.Examples.HelloAR
                         prefab = GameObjectHorizontalPlanePrefab;
                     }
 
-                    if (andyCount == 0)
+                    /*if (andyCount == 0)
                     {
                         // Instantiate prefab at the hit pose.
                         var gameObject = Instantiate(prefab, hit.Pose.position, hit.Pose.rotation);
                         andyCount = 1;
-                    }
+                    }*/
+                    //var gameObject = Instantiate(prefab, hit.Pose.position, hit.Pose.rotation);
+
 
                     // Compensate for the hitPose rotation facing away from the raycast (i.e.
                     // camera).

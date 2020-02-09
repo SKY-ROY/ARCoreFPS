@@ -3,12 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
-public class HoldToClick : MonoBehaviour, IPointerClickHandler
+using UnityEngine.UI;
+
+public class HoldToClick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    public void OnPointerClick(PointerEventData eventData)
+    public UnityEvent onLongClickDown;
+    public UnityEvent onLongClickUp;
+
+    public void OnPointerDown(PointerEventData eventData)
     {
-        throw new System.NotImplementedException();
+        onLongClickDown.Invoke();
+        //Debug.Log("OnPointerDown");
     }
 
-    
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        onLongClickUp.Invoke();
+        //Debug.Log("OnPointerUp");
+    }
+
 }
