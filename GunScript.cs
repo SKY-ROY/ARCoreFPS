@@ -123,7 +123,7 @@ public class GunScript : MonoBehaviour
         
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out Shoot, range))
         {
-            Debug.Log(">>>" + Shoot.transform.name + "<<<");
+            //Debug.Log(">>>" + Shoot.transform.name + "<<<");
 
             Target target = Shoot.transform.GetComponent<Target>();
             if (target != null)
