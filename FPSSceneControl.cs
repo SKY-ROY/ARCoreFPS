@@ -19,11 +19,13 @@ public class FPSSceneControl : MonoBehaviour
     public Text totalGemsText;
 
     public static bool collect = true;
-    public int highScore, score, totalCoins, coins, totalGems, gems;
+    public int highScore, score, totalCoins, coins, totalGems, gems; 
+    public float timeSinceLevelStart;
     public static int staticCoinsFlag, staticGemsFlag;// stCoins, stGems;
+    public static bool isGameOverFlag = false;
 
     private bool portalBool;
-    private static bool isGameOverFlag = false, isCoinUpdate = false, isGemUpdate = false;
+    private static bool isCoinUpdate = false, isGemUpdate = false;
 
     // Update is called once per frame
     private void Start()
@@ -46,6 +48,8 @@ public class FPSSceneControl : MonoBehaviour
     }
     void Update()
     {
+        timeSinceLevelStart = Time.timeSinceLevelLoad;
+
         portalBool = GetComponent<GlobalSettingsControl>().portalBool;
         portalPrefabParticleEffect.SetActive(portalBool);
 
@@ -119,6 +123,7 @@ public class FPSSceneControl : MonoBehaviour
         Debug.Log("tc: " + totalCoins);
         Debug.Log("tg: " + totalGems);
 
+        isGameOverFlag = false;
     }
     public void Restart()
     {
