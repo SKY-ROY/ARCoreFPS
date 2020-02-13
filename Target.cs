@@ -28,6 +28,12 @@ public class Target : MonoBehaviour
         {
             ScoreMultiplier(GetComponent<MonsterController>().creatureType);
         }
+        else if(GetComponent<BossController>())
+        {
+            //GameObject.Find("MonsterSpawner").GetComponent<MonsterSpawnerControl>().monsterSpawnAllowed = true;
+            ScoreMultiplier('Z');
+
+        }
         Destroy(gameObject);
         //Debug.Log("scored: " + killScore);
     }
@@ -54,6 +60,11 @@ public class Target : MonoBehaviour
                 awardedScore = 50;
                 awardedCoins = 8;
                 awardedGems = 4;
+                break;
+            case 'Z':
+                awardedScore = 100;
+                awardedCoins = 20;
+                awardedGems = 5;
                 break;
             default:
                 awardedScore = 0;
