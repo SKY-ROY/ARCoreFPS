@@ -26,7 +26,6 @@ public class GunScript : MonoBehaviour
     public AudioClip gunShotClip;
 
     [Header("Weapon(Gun) UI Elements")]
-
     private bool isReloading = false;
     private int currentAmmo;
     private bool shootCurrent;
@@ -115,7 +114,8 @@ public class GunScript : MonoBehaviour
 
         muzzleFlash.Play();
 
-        gunAnimator.Play(shootingClip.name);
+        //gunAnimator.SetTrigger("Shoot");//shoot animation
+        gunAnimator.Play(shootingClip.name);//shoot animation
 
         gunShot.PlayOneShot(gunShotClip, 1);
 
