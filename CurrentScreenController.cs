@@ -7,7 +7,8 @@ public class CurrentScreenController : MonoBehaviour
 {
     public void SceneSwitch(string Title)
     {
-        SceneManager.LoadScene(Title);
+        //SceneManager.LoadScene(Title);
+        gameObject.GetComponent<LevelLoader>().LoadLevel(Title);
     }
     public void ClosePanel(GameObject ClosingPanel)
     {
