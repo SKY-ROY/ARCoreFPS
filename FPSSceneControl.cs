@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class FPSSceneControl : MonoBehaviour
 {
     public GameObject portalPrefabParticleEffect;
-    public GameObject[] activeScreens;
+    public GameObject[] activeScreens;//ShooterSccreen, PauseScreen, GameOverScreen
     public Button slotAButton;
     public Button slotBButton;
     public Button slotCButton;
@@ -23,6 +23,8 @@ public class FPSSceneControl : MonoBehaviour
     public float timeSinceLevelStart;
     public static int staticCoinsFlag, staticGemsFlag;// stCoins, stGems;
     public static bool isGameOverFlag = false;
+
+    public Animator camAnim;
 
     private bool portalBool;
     private static bool isCoinUpdate = false, isGemUpdate = false;
@@ -111,6 +113,8 @@ public class FPSSceneControl : MonoBehaviour
     }
     public void DefaultState()
     {
+        MonsterController.ResetParameters();
+
         Target.SetScoreCount(0);//reset score
         Target.SetCoinCount(0);//reset coins
         Target.SetGemCount(0);//reset gems
@@ -128,7 +132,8 @@ public class FPSSceneControl : MonoBehaviour
     public void Restart()
     {
         DefaultState();
-        SceneManager.LoadScene("FpsScene1");
+        GameObject.Find("ScreenController").GetComponent<LevelLoader>().LoadLevel("FpsScene1");
+        //SceneManager.LoadScene("FpsScene1");
         Time.timeScale = 1;
     }
     public void GameOver()
@@ -154,5 +159,21 @@ public class FPSSceneControl : MonoBehaviour
 
         gameObject.GetComponent<GlobalSettingsControl>().TotalCoinsUpdate();//save current total coins value
         gameObject.GetComponent<GlobalSettingsControl>().TotalGemsUpdate();//save current total gems value
+    }
+    public void CamShake()
+    {
+        int rand = Random.Range(0, 3);
+        if(rand == 0)
+        {
+            camAnim.SetTrigger("Shake1");
+        }
+        else if(rand == 1)
+        {
+            camAnim.SetTrigger("Shake2");
+        }
+        else if(rand == 2)
+        {
+            camAnim.SetTrigger("Shake3");
+        }
     }
 }
