@@ -36,7 +36,6 @@ public class MonsterSpawnerControl : MonoBehaviour
             randomMonster = Random.Range(0, monsters.Length);
             Instantiate(monsters[randomMonster], spawnPoints[randomSpawnPoint].position, Quaternion.identity);
             monsters[randomMonster].GetComponent<MonsterController>().spawnerSignature = randomSpawnPoint;
-
         }
     }
 
@@ -49,7 +48,8 @@ public class MonsterSpawnerControl : MonoBehaviour
 
             randomSpawnPoint2 = Random.Range(0, spawnPoints2.Length);
             //randomMonster = Random.Range(0, Boss.Leng);
-            Instantiate(Boss, spawnPoints2[randomSpawnPoint2].position, Quaternion.Euler(0f, 180f, 0f));
+            if(Boss)
+                Instantiate(Boss, spawnPoints2[randomSpawnPoint2].position, Quaternion.Euler(0f, 180f, 0f));
             // Boss[randomMonster].GetComponent<MonsterController>().spawnerSignature = randomSpawnPoint;
             //Again();
             //Boss = GameObject.Find("Boss(Clone)");
@@ -58,12 +58,10 @@ public class MonsterSpawnerControl : MonoBehaviour
     /*
     public void Again()
     {
-
         if (!Boss.activeInHierarchy)
         {
             spawnAllowed = true;
         }
-
     }
     */
 
