@@ -3,6 +3,7 @@
 public class Target : MonoBehaviour
 {
     public float health = 20f;
+    public GameObject explosionEffect;
     
     private static int killScore = 0, killCoins = 0, killGems = 0, killCount = 0;
 
@@ -32,8 +33,15 @@ public class Target : MonoBehaviour
         {
             //GameObject.Find("MonsterSpawner").GetComponent<MonsterSpawnerControl>().monsterSpawnAllowed = true;
             ScoreMultiplier('Z');
-
         }
+        /*if(FPSSceneController.GetComponent<GlobalSettingsControl>().portalBool)
+        {
+            Instantiate(explosionEffect, transform.position, Quaternion.identity);
+        }*/
+        if(GetComponent<BossController>())
+            Instantiate(explosionEffect, new Vector3(0, 1.75f, -0.5f), Quaternion.identity);
+        else
+            Instantiate(explosionEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
         //Debug.Log("scored: " + killScore);
     }
