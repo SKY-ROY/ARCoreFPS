@@ -12,12 +12,13 @@ public class MonsterController : MonoBehaviour
 	public GameObject[] targetPoints;
 
 	[Header("Control Parameters")]
+	public float maxSpeed = 10f;
 	public int hitDamage = 1;
 	public int spawnerSignature, targetCount; 
 	public float timeSinceLevelStart, moveSpeed, rotFrequency = 50f;
 	public char creatureType = 'P';
 	public static bool speedShift = true;
-	public static float changedSpeed = 2f, timePassed;
+	public static float staticChangedSpeed = 1.5f, staticTimePassed, staticMaxSpeed;
 
 	void Start()
 	{
@@ -31,11 +32,13 @@ public class MonsterController : MonoBehaviour
 			targetPoints[i] = GameObject.Find("TargetPoints").transform.GetChild(i).gameObject;
 		}
 
+		staticMaxSpeed = maxSpeed;
+
 		rb = GetComponent<Rigidbody>();
 
 		StartCoroutine(SpeedChangeCoroutine());
 
-		moveSpeed = changedSpeed;// Random.Range(1f, 5f);
+		moveSpeed = staticChangedSpeed;// Random.Range(1f, 5f);
 	}
 	void Update()
 	{
@@ -45,19 +48,16 @@ public class MonsterController : MonoBehaviour
 		if(FPSScene)
 		{
 			timeSinceLevelStart = FPSScene.GetComponent<FPSSceneControl>().timeSinceLevelStart;
-			timePassed = timeSinceLevelStart;
+			staticTimePassed = timeSinceLevelStart;
 			//Debug.Log("time since level start: " + timeSinceLevelStart);
 		}
-
-		//Debug.Log((int)timeSinceLevelStart + " " + timeSinceLevelStart);
-		//Debug.Log(speedShift);
-		//ChangeSpeed();
 	}
 	private void OnCollisionEnter(Collision collision)
 	{
 		//health trigger
 		if(collision.gameObject.tag == "Player")
 		{
+			FPSScene.GetComponent<FPSSceneControl>().CamShake();
 			PlayerController.Health -= hitDamage;
 			Destroy(gameObject);
 			//Debug.Log(PlayerController.Health);
@@ -96,29 +96,18 @@ public class MonsterController : MonoBehaviour
 		
 		//Debug.Log(thisTarget.transform.name + ":" + spawner);
 	}
-	IEnumerator SpeedChangeCoroutine()
+	static public void ResetParameters()
 	{
-		yield return new WaitForSeconds(5f);
-		//speedShift = false;
-		
-		changedSpeed += 1;
-		Debug.Log("changed speed " + changedSpeed);
-		Debug.Log((int)timePassed + " " + timePassed);
-		
-		//Debug.Log(speedShift);
-		//speedShift = true;
+		staticChangedSpeed = 1.5f;
 	}
-	public void ChangeSpeed()//function to be called in update()
+	static IEnumerator SpeedChangeCoroutine()
 	{
-		if ((int)timeSinceLevelStart % 5 == 0 && speedShift)
+		Debug.Log("timePassed: " + staticTimePassed);
+		if ((int)staticTimePassed % 30 == 0 && staticChangedSpeed < staticMaxSpeed)
 		{
-			speedShift = false;
-			Debug.Log(speedShift);
-			//StartCoroutine(SpeedChangeCoroutine());
-
-			//changedSpeed += 0.1f;
-
-			//Debug.Log((int)timeSinceLevelStart + " " + timeSinceLevelStart);
+			staticChangedSpeed += 0.5f;
+			Debug.Log("Speed Increased " + staticChangedSpeed);
 		}
+		yield return null;//new WaitForSeconds(1f);
 	}
 }
