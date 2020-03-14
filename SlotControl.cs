@@ -12,6 +12,8 @@ public class SlotControl : MonoBehaviour
     public int activeWeaponIndex = 0;//active weapon index to be modified through inventory screen
     public AudioMixerGroup audioMixer;
 
+    private Vector3 weaponSpwanPosition;
+
     internal bool Bridge_shootCurrent = false;
     
     public Text ammmoTxt;
