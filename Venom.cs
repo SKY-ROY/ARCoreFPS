@@ -7,6 +7,7 @@ public class Venom : MonoBehaviour
     private Rigidbody rb;
     private GameObject target;
     private float moveSpeed;
+    private GameObject FPSScene;
     public float rotFrequency = 50f;
 
     Vector3 directionToTarget;
@@ -14,6 +15,7 @@ public class Venom : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        FPSScene = GameObject.Find("FPSSceneControl");
         rb = GetComponent<Rigidbody>();
         moveSpeed = Random.Range(8f, 10f);
         MoveSpit();
@@ -24,7 +26,8 @@ public class Venom : MonoBehaviour
         //health trigger
         if (collision.gameObject.CompareTag("Player"))//tag == "Player")
         {
-            Debug.Log("health--");
+            FPSScene.GetComponent<FPSSceneControl>().CamShake();
+            //Debug.Log("health--");
             PlayerController.Health -= 5;
             Destroy(gameObject);
         }
