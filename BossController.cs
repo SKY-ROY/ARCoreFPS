@@ -57,9 +57,7 @@ public class BossController : MonoBehaviour
 
     public void Move()
     {
-        // BossPositions[num].transform.position);
-        // gameObject.transform.Translate(BossPositions[num].transform.position);
-        //  gameObject.transform.LookAt(BossPositions[num].transform.position);
+        
         gameObject.transform.position = BossPositions[num].transform.position;
         gameObject.transform.position += gameObject.transform.forward * Speed * Time.deltaTime;
           
