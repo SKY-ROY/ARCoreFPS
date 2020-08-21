@@ -67,7 +67,12 @@ ModelImporter:
     4300000: M249_setting
     9500000: //RootNode
     13700000: M249_setting
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_M249
+    second: {fileID: 2100000, guid: 6370f7ce59ebcea4f8f4bb3c71213b78, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -99,7 +104,7 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 2
     addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1

@@ -20,7 +20,6 @@ public class MonsterSpawnerControl : MonoBehaviour
 
         bossSpawnAllowed = true;
         InvokeRepeating("SpawnABoss", 30f, 30f);
-        // StopBirds();
     }
 
     private void Update()
@@ -43,38 +42,12 @@ public class MonsterSpawnerControl : MonoBehaviour
     {
         if (bossSpawnAllowed)
         {
-            //  StartCoroutine(StopFuckingBirds());
-            //spawnAllowed = false;
-
             randomSpawnPoint2 = Random.Range(0, spawnPoints2.Length);
-            //randomMonster = Random.Range(0, Boss.Leng);
+
             if(Boss)
                 Instantiate(Boss, spawnPoints2[randomSpawnPoint2].position, Quaternion.Euler(0f, 180f, 0f));
-            // Boss[randomMonster].GetComponent<MonsterController>().spawnerSignature = randomSpawnPoint;
-            //Again();
-            //Boss = GameObject.Find("Boss(Clone)");
         }
     }
-    /*
-    public void Again()
-    {
-        if (!Boss.activeInHierarchy)
-        {
-            spawnAllowed = true;
-        }
-    }
-    */
-
-    /* 
-    IEnumerator StopFuckingBirds()
-    {
-        GameObject.Find("MonsterSpawner").GetComponent<MonsterSpawnerControl>().enabled = false;
-
-        yield return new WaitForSeconds(10);
-
-        GameObject.Find("MonsterSpawner").GetComponent<MonsterSpawnerControl>().enabled = true;
-    }
-    */
 
     public void StopBirds()
     {

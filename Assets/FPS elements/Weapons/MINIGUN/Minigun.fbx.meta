@@ -365,7 +365,12 @@ ModelImporter:
     4300136: Minigun Part68
     4300138: Minigun Part69
     4300140: Minigun Part70
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #26'
+    second: {fileID: 2100000, guid: b62ea8f58112bac4d96a6adc798ff92c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -397,7 +402,7 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 2
     addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1

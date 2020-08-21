@@ -43,7 +43,27 @@ ModelImporter:
     4300006: HK416_setting
     9500000: //RootNode
     13700000: HK416_setting
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HK416
+    second: {fileID: 2100000, guid: 3daa00ed734bd334b9dd91727b59d2ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HK416.1
+    second: {fileID: 2100000, guid: 3daa00ed734bd334b9dd91727b59d2ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HK416.2
+    second: {fileID: 2100000, guid: 3daa00ed734bd334b9dd91727b59d2ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_HK416.3
+    second: {fileID: 2100000, guid: 3daa00ed734bd334b9dd91727b59d2ab, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -75,7 +95,7 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 2
     addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
