@@ -1,0 +1,458 @@
+fileFormatVersion: 2
+guid: 4ed7265f1e5fa894c8a2265a8a3afaa7
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Minigun Part00
+    100004: Minigun Part01
+    100006: Minigun Part02
+    100008: Minigun Part03
+    100010: Minigun Part04
+    100012: Minigun Part05
+    100014: Minigun Part06
+    100016: Minigun Part07
+    100018: Minigun Part08
+    100020: Minigun Part09
+    100022: Minigun Part10
+    100024: Minigun Part11
+    100026: Minigun Part12
+    100028: Minigun Part13
+    100030: Minigun Part14
+    100032: Minigun Part15
+    100034: Minigun Part16
+    100036: Minigun Part17
+    100038: Minigun Part18
+    100040: Minigun Part19
+    100042: Minigun Part20
+    100044: Minigun Part21
+    100046: Minigun Part22
+    100048: Minigun Part23
+    100050: Minigun Part24
+    100052: Minigun Part25
+    100054: Minigun Part26
+    100056: Minigun Part27
+    100058: Minigun Part28
+    100060: Minigun Part29
+    100062: Minigun Part30
+    100064: Minigun Part31
+    100066: Minigun Part32
+    100068: Minigun Part33
+    100070: Minigun Part34
+    100072: Minigun Part35
+    100074: Minigun Part36
+    100076: Minigun Part37
+    100078: Minigun Part38
+    100080: Minigun Part39
+    100082: Minigun Part40
+    100084: Minigun Part41
+    100086: Minigun Part42
+    100088: Minigun Part43
+    100090: Minigun Part44
+    100092: Minigun Part45
+    100094: Minigun Part46
+    100096: Minigun Part47
+    100098: Minigun Part48
+    100100: Minigun Part49
+    100102: Minigun Part50
+    100104: Minigun Part51
+    100106: Minigun Part52
+    100108: Minigun Part53
+    100110: Minigun Part54
+    100112: Minigun Part55
+    100114: Minigun Part56
+    100116: Minigun Part57
+    100118: Minigun Part58
+    100120: Minigun Part59
+    100122: Minigun Part60
+    100124: Minigun Part61
+    100126: Minigun Part62
+    100128: Minigun Part63
+    100130: Minigun Part64
+    100132: Minigun Part65
+    100134: Minigun Part66
+    100136: Minigun Part67
+    100138: Minigun Part68
+    100140: Minigun Part69
+    100142: Minigun Part70
+    100144: Minigun Part71
+    100146: Minigun Part72
+    400000: //RootNode
+    400002: Minigun Part00
+    400004: Minigun Part01
+    400006: Minigun Part02
+    400008: Minigun Part03
+    400010: Minigun Part04
+    400012: Minigun Part05
+    400014: Minigun Part06
+    400016: Minigun Part07
+    400018: Minigun Part08
+    400020: Minigun Part09
+    400022: Minigun Part10
+    400024: Minigun Part11
+    400026: Minigun Part12
+    400028: Minigun Part13
+    400030: Minigun Part14
+    400032: Minigun Part15
+    400034: Minigun Part16
+    400036: Minigun Part17
+    400038: Minigun Part18
+    400040: Minigun Part19
+    400042: Minigun Part20
+    400044: Minigun Part21
+    400046: Minigun Part22
+    400048: Minigun Part23
+    400050: Minigun Part24
+    400052: Minigun Part25
+    400054: Minigun Part26
+    400056: Minigun Part27
+    400058: Minigun Part28
+    400060: Minigun Part29
+    400062: Minigun Part30
+    400064: Minigun Part31
+    400066: Minigun Part32
+    400068: Minigun Part33
+    400070: Minigun Part34
+    400072: Minigun Part35
+    400074: Minigun Part36
+    400076: Minigun Part37
+    400078: Minigun Part38
+    400080: Minigun Part39
+    400082: Minigun Part40
+    400084: Minigun Part41
+    400086: Minigun Part42
+    400088: Minigun Part43
+    400090: Minigun Part44
+    400092: Minigun Part45
+    400094: Minigun Part46
+    400096: Minigun Part47
+    400098: Minigun Part48
+    400100: Minigun Part49
+    400102: Minigun Part50
+    400104: Minigun Part51
+    400106: Minigun Part52
+    400108: Minigun Part53
+    400110: Minigun Part54
+    400112: Minigun Part55
+    400114: Minigun Part56
+    400116: Minigun Part57
+    400118: Minigun Part58
+    400120: Minigun Part59
+    400122: Minigun Part60
+    400124: Minigun Part61
+    400126: Minigun Part62
+    400128: Minigun Part63
+    400130: Minigun Part64
+    400132: Minigun Part65
+    400134: Minigun Part66
+    400136: Minigun Part67
+    400138: Minigun Part68
+    400140: Minigun Part69
+    400142: Minigun Part70
+    400144: Minigun Part71
+    400146: Minigun Part72
+    2100000: 'Material #26'
+    2300000: Minigun Part00
+    2300002: Minigun Part01
+    2300004: Minigun Part02
+    2300006: Minigun Part03
+    2300008: Minigun Part04
+    2300010: Minigun Part05
+    2300012: Minigun Part06
+    2300014: Minigun Part07
+    2300016: Minigun Part08
+    2300018: Minigun Part09
+    2300020: Minigun Part10
+    2300022: Minigun Part11
+    2300024: Minigun Part12
+    2300026: Minigun Part13
+    2300028: Minigun Part14
+    2300030: Minigun Part15
+    2300032: Minigun Part16
+    2300034: Minigun Part17
+    2300036: Minigun Part18
+    2300038: Minigun Part19
+    2300040: Minigun Part20
+    2300042: Minigun Part21
+    2300044: Minigun Part22
+    2300046: Minigun Part23
+    2300048: Minigun Part24
+    2300050: Minigun Part25
+    2300052: Minigun Part26
+    2300054: Minigun Part27
+    2300056: Minigun Part28
+    2300058: Minigun Part29
+    2300060: Minigun Part30
+    2300062: Minigun Part31
+    2300064: Minigun Part32
+    2300066: Minigun Part33
+    2300068: Minigun Part34
+    2300070: Minigun Part35
+    2300072: Minigun Part36
+    2300074: Minigun Part37
+    2300076: Minigun Part38
+    2300078: Minigun Part39
+    2300080: Minigun Part40
+    2300082: Minigun Part41
+    2300084: Minigun Part42
+    2300086: Minigun Part43
+    2300088: Minigun Part44
+    2300090: Minigun Part45
+    2300092: Minigun Part46
+    2300094: Minigun Part47
+    2300096: Minigun Part48
+    2300098: Minigun Part49
+    2300100: Minigun Part50
+    2300102: Minigun Part51
+    2300104: Minigun Part52
+    2300106: Minigun Part53
+    2300108: Minigun Part54
+    2300110: Minigun Part55
+    2300112: Minigun Part56
+    2300114: Minigun Part57
+    2300116: Minigun Part58
+    2300118: Minigun Part59
+    2300120: Minigun Part60
+    2300122: Minigun Part61
+    2300124: Minigun Part62
+    2300126: Minigun Part63
+    2300128: Minigun Part64
+    2300130: Minigun Part65
+    2300132: Minigun Part66
+    2300134: Minigun Part67
+    2300136: Minigun Part68
+    2300138: Minigun Part69
+    2300140: Minigun Part70
+    3300000: Minigun Part00
+    3300002: Minigun Part01
+    3300004: Minigun Part02
+    3300006: Minigun Part03
+    3300008: Minigun Part04
+    3300010: Minigun Part05
+    3300012: Minigun Part06
+    3300014: Minigun Part07
+    3300016: Minigun Part08
+    3300018: Minigun Part09
+    3300020: Minigun Part10
+    3300022: Minigun Part11
+    3300024: Minigun Part12
+    3300026: Minigun Part13
+    3300028: Minigun Part14
+    3300030: Minigun Part15
+    3300032: Minigun Part16
+    3300034: Minigun Part17
+    3300036: Minigun Part18
+    3300038: Minigun Part19
+    3300040: Minigun Part20
+    3300042: Minigun Part21
+    3300044: Minigun Part22
+    3300046: Minigun Part23
+    3300048: Minigun Part24
+    3300050: Minigun Part25
+    3300052: Minigun Part26
+    3300054: Minigun Part27
+    3300056: Minigun Part28
+    3300058: Minigun Part29
+    3300060: Minigun Part30
+    3300062: Minigun Part31
+    3300064: Minigun Part32
+    3300066: Minigun Part33
+    3300068: Minigun Part34
+    3300070: Minigun Part35
+    3300072: Minigun Part36
+    3300074: Minigun Part37
+    3300076: Minigun Part38
+    3300078: Minigun Part39
+    3300080: Minigun Part40
+    3300082: Minigun Part41
+    3300084: Minigun Part42
+    3300086: Minigun Part43
+    3300088: Minigun Part44
+    3300090: Minigun Part45
+    3300092: Minigun Part46
+    3300094: Minigun Part47
+    3300096: Minigun Part48
+    3300098: Minigun Part49
+    3300100: Minigun Part50
+    3300102: Minigun Part51
+    3300104: Minigun Part52
+    3300106: Minigun Part53
+    3300108: Minigun Part54
+    3300110: Minigun Part55
+    3300112: Minigun Part56
+    3300114: Minigun Part57
+    3300116: Minigun Part58
+    3300118: Minigun Part59
+    3300120: Minigun Part60
+    3300122: Minigun Part61
+    3300124: Minigun Part62
+    3300126: Minigun Part63
+    3300128: Minigun Part64
+    3300130: Minigun Part65
+    3300132: Minigun Part66
+    3300134: Minigun Part67
+    3300136: Minigun Part68
+    3300138: Minigun Part69
+    3300140: Minigun Part70
+    4300000: Minigun Part00
+    4300002: Minigun Part01
+    4300004: Minigun Part02
+    4300006: Minigun Part03
+    4300008: Minigun Part04
+    4300010: Minigun Part05
+    4300012: Minigun Part06
+    4300014: Minigun Part07
+    4300016: Minigun Part08
+    4300018: Minigun Part09
+    4300020: Minigun Part10
+    4300022: Minigun Part11
+    4300024: Minigun Part12
+    4300026: Minigun Part13
+    4300028: Minigun Part14
+    4300030: Minigun Part15
+    4300032: Minigun Part16
+    4300034: Minigun Part17
+    4300036: Minigun Part18
+    4300038: Minigun Part19
+    4300040: Minigun Part20
+    4300042: Minigun Part21
+    4300044: Minigun Part22
+    4300046: Minigun Part23
+    4300048: Minigun Part24
+    4300050: Minigun Part25
+    4300052: Minigun Part26
+    4300054: Minigun Part27
+    4300056: Minigun Part28
+    4300058: Minigun Part29
+    4300060: Minigun Part30
+    4300062: Minigun Part31
+    4300064: Minigun Part32
+    4300066: Minigun Part33
+    4300068: Minigun Part34
+    4300070: Minigun Part35
+    4300072: Minigun Part36
+    4300074: Minigun Part37
+    4300076: Minigun Part38
+    4300078: Minigun Part39
+    4300080: Minigun Part40
+    4300082: Minigun Part41
+    4300084: Minigun Part42
+    4300086: Minigun Part43
+    4300088: Minigun Part44
+    4300090: Minigun Part45
+    4300092: Minigun Part46
+    4300094: Minigun Part47
+    4300096: Minigun Part48
+    4300098: Minigun Part49
+    4300100: Minigun Part50
+    4300102: Minigun Part51
+    4300104: Minigun Part52
+    4300106: Minigun Part53
+    4300108: Minigun Part54
+    4300110: Minigun Part55
+    4300112: Minigun Part56
+    4300114: Minigun Part57
+    4300116: Minigun Part58
+    4300118: Minigun Part59
+    4300120: Minigun Part60
+    4300122: Minigun Part61
+    4300124: Minigun Part62
+    4300126: Minigun Part63
+    4300128: Minigun Part64
+    4300130: Minigun Part65
+    4300132: Minigun Part66
+    4300134: Minigun Part67
+    4300136: Minigun Part68
+    4300138: Minigun Part69
+    4300140: Minigun Part70
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #26'
+    second: {fileID: 2100000, guid: b62ea8f58112bac4d96a6adc798ff92c, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 2
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

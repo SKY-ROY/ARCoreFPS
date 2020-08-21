@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: 7c04a846ff1c06e48ae82e350a230164
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Clip_low
+    100004: Ejector_low
+    100006: Frame_low
+    100008: Hammer_low
+    100010: Plane001
+    100012: Sky001
+    100014: Slide Stop_low
+    100016: Slide_low
+    100018: Trigger_low
+    400000: //RootNode
+    400002: Clip_low
+    400004: Ejector_low
+    400006: Frame_low
+    400008: Hammer_low
+    400010: Plane001
+    400012: Sky001
+    400014: Slide Stop_low
+    400016: Slide_low
+    400018: Trigger_low
+    2100000: GunGs
+    2100002: Plane
+    2300000: Clip_low
+    2300002: Ejector_low
+    2300004: Frame_low
+    2300006: Hammer_low
+    2300008: Plane001
+    2300010: Slide Stop_low
+    2300012: Slide_low
+    2300014: Trigger_low
+    3300000: Clip_low
+    3300002: Ejector_low
+    3300004: Frame_low
+    3300006: Hammer_low
+    3300008: Plane001
+    3300010: Slide Stop_low
+    3300012: Slide_low
+    3300014: Trigger_low
+    4300000: Frame_low
+    4300002: Slide_low
+    4300004: Ejector_low
+    4300006: Hammer_low
+    4300008: Trigger_low
+    4300010: Slide Stop_low
+    4300012: Clip_low
+    4300014: Plane001
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GunGs
+    second: {fileID: 2100000, guid: b63858116364a5748b271d7b9384f469, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plane
+    second: {fileID: 2100000, guid: 311bafa255a520c468cf8791193713b7, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 2
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

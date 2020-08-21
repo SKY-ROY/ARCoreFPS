@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: a582afbfa81a9df419677f299e5f0dd8
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Gun_ammo01
+    100002: Gun_ammo02
+    100004: Gun_ammo03
+    100006: Gun_ammo04
+    100008: Gun_ammo05
+    100010: Gun_ammo06
+    100012: Gun_ammo07
+    100014: Gun_ammo08
+    100016: Gun_ammo09
+    100018: Gun_ammo10
+    100020: Gun_ammo11
+    100022: Gun_ammo12
+    100024: Gun_ammo13
+    100026: Gun_ammo14
+    100028: Gun_ammo15
+    100030: Gun_bipod
+    100032: Gun_bipod_L
+    100034: Gun_bipod_R
+    100036: Gun_bolt
+    100038: Gun_cover
+    100040: Gun_magazinesocket
+    100042: gun_rearsight_01
+    100044: gun_rearsight_02
+    100046: gun_rearsight_03
+    100048: Gun_trigger
+    100050: //RootNode
+    100052: M249
+    100054: M249_setting
+    100056: Mag_root
+    100058: Skin
+    400000: Gun_ammo01
+    400002: Gun_ammo02
+    400004: Gun_ammo03
+    400006: Gun_ammo04
+    400008: Gun_ammo05
+    400010: Gun_ammo06
+    400012: Gun_ammo07
+    400014: Gun_ammo08
+    400016: Gun_ammo09
+    400018: Gun_ammo10
+    400020: Gun_ammo11
+    400022: Gun_ammo12
+    400024: Gun_ammo13
+    400026: Gun_ammo14
+    400028: Gun_ammo15
+    400030: Gun_bipod
+    400032: Gun_bipod_L
+    400034: Gun_bipod_R
+    400036: Gun_bolt
+    400038: Gun_cover
+    400040: Gun_magazinesocket
+    400042: gun_rearsight_01
+    400044: gun_rearsight_02
+    400046: gun_rearsight_03
+    400048: Gun_trigger
+    400050: //RootNode
+    400052: M249
+    400054: M249_setting
+    400056: Mag_root
+    400058: Skin
+    2100000: MI_M249
+    4300000: M249_setting
+    9500000: //RootNode
+    13700000: M249_setting
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_M249
+    second: {fileID: 2100000, guid: 6370f7ce59ebcea4f8f4bb3c71213b78, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 2
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0254
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
